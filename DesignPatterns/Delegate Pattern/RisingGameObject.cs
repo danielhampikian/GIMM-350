@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RisingGameObject : MonoBehaviour {
 
+    //make another button where the planet rises and does something else...
     Animator anim;
 	void Start () {
         anim = GetComponent<Animator>();
