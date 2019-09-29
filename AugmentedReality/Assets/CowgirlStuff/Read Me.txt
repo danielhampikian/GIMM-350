@@ -1,0 +1,55 @@
+Thanks for having downloaded the Wild West Characters Mega Pack.
+
+Prefabs :
+
+You will find all the prefabs in the "Prefabs" file, drag and drop them in your scene.
+
+Materials :
+
+All the pack is using 1 material and 1 texture, it is available in the "materials" file.
+For any reason if you want to change the material shader just clik on the material "1" and select 
+the shader you want in the inspector. 
+
+
+Post processing :
+
+Every picture  you've seen was using post processing.
+Post processing is made to enhance the graphics of your game but will cost in performence, that's why
+there wasn't much used in this pack.
+The post processing profil is available in the post processing file, however there are no effects added
+, only the settings of the post process layer were used.
+
+To download post processing please go to "window " then "package manager ", then search for "advanced" 
+, "show previewed packages" and scroll down until you find the post processing package.
+
+Once downloaded you can go to you camera settings and add component. Look for "Post process layer" and 
+"Post process volume ".
+
+As I mentionned before only the settings from the post process layer were touched.
+Trigger : Main camera
+Layer : Post processing
+
+Anti-aliasing : subpixel Morphological Anti Aliasing
+Quality High
+
+
+
+Graphic quality :
+
+Please tick in the camera settings "Allow HDR" and "Allow MSAA".
+You can also check that you're project is in the best graphics quality, to do that go to 
+"edit", "project settings", "quality" and change to "ultra".
+
+
+
+Characters :
+
+
+As written in the description, all the characters are not animated that's because we're not aloud to use Mixamo rigs,
+So all the character in the pack are available in T pose.
+However it is really simple for you to automatically rig and animate all the characters from the pack. You just need to go to https://www.mixamo.com/
+If you havn't got an account create one. Then just upload the character you want to animate and choose the animation you want to 
+use. You also have to download the animation if you want to use a pose.
+
+
+There you go you're now ready to enjoy your pack, thanks again and for any queries please email : newvision.istudios@gmail.com
