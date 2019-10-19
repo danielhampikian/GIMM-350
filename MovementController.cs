@@ -38,13 +38,16 @@ public class MovementController : MonoBehaviour
             transform.position = transform.position + Camera.main.transform.forward * (moveSpeed * moveForward) * Time.deltaTime;
             transform.position = transform.position + Camera.main.transform.right * (moveSpeed * moveSideways) * Time.deltaTime;
         }
+        /* put the commented out sections below in an 'enemy movement' c# script to get a basic game of chase going'
         if(Vector3.Distance(transform.position, target) < 1)
         {
             pickRandomTarget();
         }
         Vector3.Lerp(transform.position, target, Time.deltaTime);
         //Vector3.MoveTowards(transform.position, target, .5f);
+        */
     }
+    /*
     Vector3 target;
     public Transform player;
     void pickRandomTarget()
@@ -52,6 +55,7 @@ public class MovementController : MonoBehaviour
         target = new Vector3((float)(Random.Range(-5, 5)), 1f, (float)(Random.Range(-5, 5)));
         //target = target + (player.position - transform.position);
     }
+    */
     private void FixedUpdate()
     {
         RaycastHit hit;
