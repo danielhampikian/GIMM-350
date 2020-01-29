@@ -24,6 +24,7 @@ public class PlaceObject : MonoBehaviour
     static List<ARRaycastHit> arHits = new List<ARRaycastHit>();
     void Awake()
     {
+        
         arRaycastManager = GetComponent<ARRaycastManager>();
         if (Application.isEditor)
         {
@@ -96,7 +97,7 @@ public class PlaceObject : MonoBehaviour
         }
         if (firing)
         {
-            goProj.transform.position = Vector3.Lerp(goProj.transform.position, pos, 2f * Time.deltaTime);
+            goProj.transform.position = Vector3.Lerp(goProj.transform.position, pos, placeSpeed * Time.deltaTime);
             if (Vector3.Distance(goProj.transform.position,pos) < .1)
             {
                 firing = false;

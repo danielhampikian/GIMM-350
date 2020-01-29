@@ -99,8 +99,10 @@ public class TouchControls : MonoBehaviour
                         pinch = pinch * .005f;
                         Vector3 pinchScale = currentObj.transform.localScale;
                         pinchScale += pinch * currentObj.transform.localScale;
-                        if (pinchScale.x > .5 && pinchScale.x < 2)
+
+                        if (pinchScale.x > .1 && pinchScale.x < 5)
                         {
+
                         }
                         currentObj.transform.localScale = pinchScale;
 

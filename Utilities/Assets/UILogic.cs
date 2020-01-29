@@ -5,12 +5,14 @@ public class UILogic : MonoBehaviour
 {
     public Text text;
     public string processedText;
-    public InputField input;
+    public InputField weightIn;
+    public InputField gradesIn;
+
 
     public void getInput()
-    
+     
     {
-        processText(input.textComponent.text);
+        processText(weightIn.textComponent.text, gradesIn.textComponent.text);
     }
     public void displayOutput()
     {
@@ -25,6 +27,7 @@ public class UILogic : MonoBehaviour
             typeOfInput = "string";
         }
         text.text = typeOfInput;
+        
         //text.text = InputHandler.getAverageChars(processedText).ToString();
     }
     public void processText(string inS)
